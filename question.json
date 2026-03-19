@@ -1,0 +1,44 @@
+{
+    "questions":[
+        {
+            "id":1,
+            "Question":"¿Conoce el lenguaje de programación PHP?"
+        },
+        {
+            "id":2,
+            "Question":"¿Ha utilizado PHP en algún proyecto de desarrollo web?"
+        },
+        {
+            "id":3,
+            "Question":"¿Considera que PHP sigue siendo relevante en el desarrollo web actual?"
+        },
+        {
+            "id":4,
+            "Question":"¿Cree que PHP es un lenguaje fácil de aprender en comparación con otros lenguajes?"
+        },
+        {
+            "id":5,
+            "Question":"¿Ha trabajado con frameworks de PHP como Laravel?"
+        },
+        {
+            "id":6,
+            "Question":"¿Considera que el uso de frameworks como Laravel mejora la productividad en el desarrollo web?"
+        },
+        {
+            "id":7,
+            "Question":"¿Cree que PHP permite desarrollar aplicaciones web seguras?"
+        },
+        {
+            "id":8,
+            "Question":"¿Considera que PHP es una buena opción para proyectos empresariales?"
+        },
+        {
+            "id":9,
+            "Question":"¿Cree que PHP tiene una alta demanda en el mercado laboral actual?"
+        },
+        {
+            "id":10,
+            "Question":"¿Preferiría usar PHP en lugar de otros lenguajes para desarrollo web del lado del servidor?"
+        }
+    ]
+}
