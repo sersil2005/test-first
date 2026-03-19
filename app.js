@@ -22,15 +22,6 @@ async function loadQuestions() {
         }).join('')
         form.innerHTML = html
 
-        form.addEventListener('change', (e) => {
-            if (e.target.type === 'radio') {
-                const questionId = e.target.name
-                const questionRes = e.target.value
-
-                console.log(`Pregunta: ${questionId}, Respuesta: ${questionRes}`);
-            }
-        })
-
         button.addEventListener('click', async () => {
             button.disabled = true
             button.style.cursor = 'wait'
@@ -66,8 +57,9 @@ async function loadQuestions() {
                     body: JSON.stringify(dataToSend),
                     signal: controller.signal
                 })
-                alert('Datos enviados')
                 clearTimeout(timeOutId)
+                alert('Datos enviados')
+                form.reset()
 
             } catch (error) {
                 if (error.name === 'AbortError') {
@@ -85,11 +77,6 @@ async function loadQuestions() {
     } catch (err) {
         console.error(err)
     }
-}
-
-async function sendRess() {
-    const form = document.querySelector('form')
-
 }
 
 document.addEventListener('DOMContentLoaded', (e) => {
