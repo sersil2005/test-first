@@ -47,14 +47,14 @@ async function loadQuestions() {
                 })
             }
 
-            if (dataToSend < totalQuestions) {
+            if (dataToSend.length < totalQuestions) {
                 alert('Responda todas las preguntas')
                 return
             }
 
             const URL = 'https://script.google.com/macros/s/AKfycbwZvYZ-FLaYgqf1PLlKERlcz8SoMIy0t6OrCVGFfzaFMFWWMEoUgIP-b1G3h2cEMSt7/exec'
             const controller = new AbortController()
-            const timeOutId = setTimeout(() => controller.abort(), 5000)
+            const timeOutId = setTimeout(() => controller.abort(), 30000)
 
             try {
                 const response = await fetch(URL, {
