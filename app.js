@@ -66,12 +66,12 @@ async function loadQuestions() {
                     body: JSON.stringify(dataToSend),
                     signal: controller.signal
                 })
-                console.log('Datos enviados', dataToSend)
+                alert('Datos enviados')
                 clearTimeout(timeOutId)
 
             } catch (error) {
                 if (error.name === 'AbortError') {
-                    alert('Se agotó el tiempo')
+                    console.log('Se agotó el tiempo')
                 } else {
                     console.log('Error al enviar: ', err)
                 }
